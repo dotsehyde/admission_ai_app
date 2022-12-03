@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/', methods=['POST'])
 def index():
     try:
-        model = pickle.load(open('../model.pkl', 'rb'))
+        model = pickle.load(open(r"C:/Users/BENAIAH/Desktop/Ben/AI/Project/model.pkl", 'rb'))
         gre = request.form.get("gre")
         toefl = request.form.get("toefl")
         cgpa = request.form.get("cgpa")
